@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".banner").unslider({fluid:!0})});
