@@ -1,0 +1,15 @@
+// Top
+//  Main View
+
+#top {
+	 @include span(full);
+	 .logo {@include span(2 wide first);
+	 		background-color:$one; }
+	 .nav-top { @include span(8 last);
+	 			text-align: right;
+				background-color:$one;
+				ul{ margin :0; 
+					li{padding:0 10px; display:inline-block; padding:0 0.5em;}
+				}
+	 		}
+	}
