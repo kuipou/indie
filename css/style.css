@@ -337,3 +337,15 @@ head:hover ~ .container:before, head:hover ~ body .container:before {
   padding: 0 10px;
   display: inline-block;
   padding: 0 0.5em; }
+
+.slider {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #71dad2;
+  position: relative;
+  overflow: auto; }
+.slider ul li {
+  float: left;
+  list-style: none; }
