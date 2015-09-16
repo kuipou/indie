@@ -1,9 +1,45 @@
 // general component
 
 .slider {
-	@include span(full);
-	background-color:$two;
+	@include span (full);
+	background-color:teal;
 	position: relative;
 	overflow: auto;
-	ul li{ float:left; list-style: none;  }
+	text-align:center;
+	margin-bottom:0.5em;
+	ul li{ float:left; list-style: none;  
+		  h2 {font-size:2em; padding:0;
+		  	&:before, &:after {
+		  		content: "a string";
+		  		}
+		  	}
+		   p{font-size:0.8em;}
+		 }
 		}
+
+.container {width:span(10 of 12); margin:0 auto;}
+
+.post { @include span(8 of 12); @include card(2);
+		min-height:100px;
+		background-color: white;
+		margin-bottom: gutter();
+
+		.title{
+
+			@include span(full);
+			height: 60px;
+			padding:0.5em;
+			text-align:left 
+			h1{font-size:1.3em;}
+			}
+		.text {color:$gray;
+			   padding:0.1em;
+			   border-bottom:1px solid $gray;
+			 }
+		@include breakpoint(max-width ($sm - 1)){
+			// margin-bottom: gutter() * 2;
+			@include span (full);
+			&:nth-child(even){
+			 @include span (full);}
+		}
+	}

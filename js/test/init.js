@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".banner").unslider({fluid:!0})});
+$(document).ready(function(){$(".slider").unslider({fluid:!0})});
