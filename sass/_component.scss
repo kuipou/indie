@@ -23,23 +23,19 @@
 		min-height:100px;
 		background-color: white;
 		margin-bottom: gutter() / 2;
-
+		border-radius:2px;
 		.title{
-
-			@include span(full);
-			height: 60px;
-			padding:0.5em;
-			text-align:left 
-			h1{font-size:1.3em;}
+			background-color:yellow;
+			height: 172px;
+			padding:1.2em;
+			text-align:left;
+			h1{font-size:1.3em; color:red;
+				position:relative; bottom:-81%;}
 			}
 		.text {color:$gray;
-			   padding:0.1em;
+
+			   padding:0 gutter();
 			   border-bottom:1px solid $gray;
 			 }
-		@include breakpoint(max-width ($sm - 1)){
-			// margin-bottom: gutter() * 2;
-			@include span (full);
-			&:nth-child(even){
-			 @include span (full);}
-		}
+		
 	}

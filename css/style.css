@@ -172,11 +172,6 @@ td, th {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-html {
-  color: black;
-  font-size: 1em;
-  line-height: 1.4; }
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -532,8 +527,8 @@ head:hover ~ .container:before, head:hover ~ body .container:before {
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
   padding-left: 8.47458%;
   padding-right: 8.47458%;
-  background-color: gray;
-  height: 75px; }
+  background-color: #f7fdfe;
+  height: 80px; }
 #top:after {
   content: " ";
   display: block;
@@ -604,28 +599,19 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
   min-height: 100px;
   background-color: white;
-  margin-bottom: 0.84746%; }
+  margin-bottom: 0.84746%;
+  border-radius: 2px; }
 .post .title {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  height: 60px;
-  padding: 0.5em; }
-.post .title text-align:left h1 {
-  font-size: 1.3em; }
+  background-color: yellow;
+  height: 172px;
+  padding: 1.2em;
+  text-align: left; }
+.post .title h1 {
+  font-size: 1.3em;
+  color: red;
+  position: relative;
+  bottom: -81%; }
 .post .text {
-  color: gray;
-  padding: 0.1em;
-  border-bottom: 1px solid gray; }
-@media (max-width: 749px) {
-  .post {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; }
-  .post:nth-child(even) {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; } }
+  color: #82868f;
+  padding: 0 1.69492%;
+  border-bottom: 1px solid #82868f; }
