@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Palanquin:400,500,600,700&subset=latin,latin-ext);
 /* Default Setup for Christophe Rudyj's Gulp */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
@@ -358,6 +359,25 @@ textarea {
   display: none !important;
   visibility: hidden !important; }
 
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden; }
+.embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object, .embed-responsive video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0; }
+.embed-responsive.embed-responsive-16by9 {
+  padding-bottom: 56.25%; }
+.embed-responsive.embed-responsive-4by3 {
+  padding-bottom: 75%; }
+
 h2 {
   text-align: center;
   font-size: 1rem;
@@ -558,6 +578,13 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   width: 66.10169%;
   float: right;
   margin-right: 0;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font: 1.2em "Palanquin", sans-serif;
+  font-weight: 700;
   text-align: right;
   background-color: #fbeecb; }
 #top .nav-top ul {
@@ -566,6 +593,12 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   padding: 0 10px;
   display: inline-block;
   padding: 0 0.5em; }
+#top .profile {
+  border-radius: 50%;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background-color: gray; }
 
 .slider {
   width: 100%;
