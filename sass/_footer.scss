@@ -1,0 +1,34 @@
+footer{
+	@include container(12 center);
+	@include card(1);
+	@include pad(1 of 12);
+	height: 100px;
+	color:$gray;
+	background-color: $footer-gray;
+	nav{
+		@include span(6 wide first);
+		background-color:$one;
+		ul{
+			margin:0;
+			li{
+				padding:0;
+				display:inline-block;
+				padding:0 0.5em;
+				a{
+					text-decoration:none;
+					color:#333;
+				}
+			}
+		}
+	}
+	.social{
+		@include span(1 last);
+		background-color:$two;
+		li {border-radius:50%; border:1px solid #e3e3e3;}
+	}
+	.legal{
+		@include span(3 last);
+		clear:both;
+		background-color:$three;
+	}
+}

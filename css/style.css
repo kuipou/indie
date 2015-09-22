@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Palanquin:400,500,600,700&subset=latin,latin-ext);
 /* Default Setup for Christophe Rudyj's Gulp */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
@@ -358,6 +359,25 @@ textarea {
   display: none !important;
   visibility: hidden !important; }
 
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden; }
+.embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object, .embed-responsive video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0; }
+.embed-responsive.embed-responsive-16by9 {
+  padding-bottom: 56.25%; }
+.embed-responsive.embed-responsive-4by3 {
+  padding-bottom: 75%; }
+
 h2 {
   text-align: center;
   font-size: 1rem;
@@ -558,6 +578,13 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   width: 66.10169%;
   float: right;
   margin-right: 0;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font: 1.2em "Palanquin", Helvetica, Arial, sans-serif;
+  font-weight: 700;
   text-align: right;
   background-color: #fbeecb; }
 #top .nav-top ul {
@@ -566,6 +593,12 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   padding: 0 10px;
   display: inline-block;
   padding: 0 0.5em; }
+#top .profile {
+  border-radius: 50%;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background-color: gray; }
 
 .slider {
   width: 100%;
@@ -615,3 +648,117 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   color: #82868f;
   padding: 0 1.69492%;
   border-bottom: 1px solid #82868f; }
+
+button.button {
+  background-color: #777;
+  border-width: 0;
+  border-collapse: collapse;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.13725) 0px 2px 2px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.11765) 0px 1px 5px 0px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: inline-block;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  height: 2em;
+  line-height: 2em;
+  margin: 0;
+  min-width: 64px;
+  padding: 0 8px 0 8px;
+  position: relative;
+  text-align: center;
+  -webkit-transition-delay: 0s, 0s, 0s;
+          transition-delay: 0s, 0s, 0s;
+  -webkit-transition-duration: 0.2s, 0.2s, 0.2s;
+          transition-duration: 0.2s, 0.2s, 0.2s;
+  -webkit-transition-property: box-shadow, background-color, color;
+          transition-property: box-shadow, background-color, color;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 1, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 1, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: middle;
+  will-change: box-shadow, transform; }
+
+button.roundButton {
+  background-color: #777;
+  border-width: 0;
+  border-collapse: collapse;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.13725) 0px 2px 2px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.11765) 0px 1px 5px 0px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: inline-block;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  min-width: 40px;
+  width: 40px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  -webkit-transition-delay: 0s, 0s, 0s;
+          transition-delay: 0s, 0s, 0s;
+  -webkit-transition-duration: 0.2s, 0.2s, 0.2s;
+          transition-duration: 0.2s, 0.2s, 0.2s;
+  -webkit-transition-property: box-shadow, background-color, color;
+          transition-property: box-shadow, background-color, color;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 1, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 1, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: middle;
+  will-change: box-shadow, transform; }
+
+footer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  padding-left: 8.47458%;
+  padding-right: 8.47458%;
+  height: 100px;
+  background-color: #45494d; }
+footer:after {
+  content: " ";
+  display: block;
+  clear: both; }
+head:hover ~ footer, head:hover ~ body footer {
+  position: relative; }
+head:hover ~ footer:before, head:hover ~ body footer:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  z-index: 998;
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+  background-size: 8.47458%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top; }
+footer nav {
+  width: 50.84746%;
+  float: left;
+  margin-right: 1.66667%;
+  background-color: #fbeecb; }
+footer nav ul {
+  margin: 0; }
+footer nav ul li {
+  padding: 0;
+  display: inline-block;
+  padding: 0 0.5em; }
+footer nav ul li a {
+  text-decoration: none;
+  color: #333; }
+footer .social {
+  width: 6.77966%;
+  float: right;
+  margin-right: 0;
+  background-color: #71dad2; }
+footer .legal {
+  width: 23.72881%;
+  float: right;
+  margin-right: 0;
+  clear: both;
+  background-color: #265432; }

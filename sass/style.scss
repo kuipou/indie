@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Palanquin:400,500,600,700&subset=latin,latin-ext);
 @import  "lib/lib";
 @import  "lib/mixins";
 
@@ -15,7 +16,7 @@ $susy: (
 
 
 // Variables
-// Colors
+// Colors/
 
 // Test Color
 $one: #fbeecb;
@@ -35,7 +36,9 @@ $sm:   750px;
 @import "nav";
 @import "top";
 @import "component";
-
+@import "profile";
+@import "button";
+@import "footer";
 
 
 
