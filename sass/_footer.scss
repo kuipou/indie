@@ -3,6 +3,7 @@ footer{
 	@include card(1);
 	@include pad(1 of 12);
 	height: 100px;
+	color:$gray;
 	background-color: $footer-gray;
 	nav{
 		@include span(6 wide first);
@@ -23,6 +24,7 @@ footer{
 	.social{
 		@include span(1 last);
 		background-color:$two;
+		li {border-radius:50%; border:1px solid #e3e3e3;}
 	}
 	.legal{
 		@include span(3 last);
