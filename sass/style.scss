@@ -16,7 +16,7 @@ $susy: (
 
 
 // Variables
-// Colors
+// Colors/
 
 // Test Color
 $one: #fbeecb;
@@ -37,7 +37,8 @@ $sm:   750px;
 @import "top";
 @import "component";
 @import "profile";
-
+@import "button";
+@import "footer";
 
 
 
