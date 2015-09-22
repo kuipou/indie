@@ -5,6 +5,7 @@ footer{
 	height: 100px;
 	color:$gray;
 	background-color: $footer-gray;
+	@include rob(1em, 700);
 	nav{
 		@include span(6 wide first);
 		background-color:$one;
@@ -27,8 +28,17 @@ footer{
 		li {border-radius:50%; border:1px solid #e3e3e3;}
 	}
 	.legal{
-		@include span(3 last);
+		@include span(full);
 		clear:both;
+		
 		background-color:$three;
+		li{display:inline-block; list-style:none; 
+			a{color:lighten($footer-gray, 15%);
+				text-decoration:none;
+				&:hover {color:lighten($footer-gray, 10%);
+						
+  					}
+				}
+			}
 	}
 }
