@@ -2,7 +2,7 @@
 	font: $size 'Palanquin', Helvetica, Arial, sans-serif;
 	font-weight:$weight;
 	}
-@mixin pal ($size, $weight) {
-	font: $size 'Palanquin', sans-serif;
+@mixin rob ($size, $weight) {
+	font: $size 'Roboto', Helvetica, Arial, sans-serif;
 	font-weight:$weight;
 	} 

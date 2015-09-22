@@ -583,7 +583,7 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  font: 1.2em "Palanquin", sans-serif;
+  font: 1.2em "Palanquin", Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-align: right;
   background-color: #fbeecb; }
