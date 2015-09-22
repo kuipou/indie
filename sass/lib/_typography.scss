@@ -1,0 +1,4 @@
+@mixin pal ($size, $weight) {
+	font: $size 'Palanquin', sans-serif;
+	font-weight:$weight;
+	}
