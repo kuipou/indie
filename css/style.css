@@ -825,8 +825,7 @@ footer .legal {
   margin-left: 0;
   margin-right: 0;
   text-align: right;
-  height: 40px;
-  padding: 1em 0;
+  padding: 0.8em 0;
   border-top: 1px solid #73767a; }
 footer .legal li {
   display: inline-block;

@@ -44,8 +44,7 @@ footer{
 	.legal{
 		@include span(full);
 		text-align:right;
-		height:40px;
-		padding:1em 0;
+		padding:0.8em 0;
 		border-top:1px solid $footer-gray-dark;
 		li{display:inline-block; list-style:none; 
 			color:$footer-gray-dark;
