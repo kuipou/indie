@@ -652,9 +652,9 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   position: relative;
   bottom: -81%; }
 .post .text {
-  color: #82868f;
+  color: #D6DDE3;
   padding: 0 1.69492%;
-  border-bottom: 1px solid #82868f; }
+  border-bottom: 1px solid #D6DDE3; }
 
 button.button {
   background-color: #777;
@@ -719,12 +719,12 @@ footer {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
   padding-left: 8.47458%;
   padding-right: 8.47458%;
-  height: 100px;
-  color: #82868f;
+  height: 120px;
+  color: #D6DDE3;
   background-color: #45494d;
+  clear: both;
   font: 0.85em "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
   list-style: none; }
@@ -751,39 +751,44 @@ head:hover ~ footer:before, head:hover ~ body footer:before {
   background-origin: content-box;
   background-clip: content-box;
   background-position: left top; }
+footer ul {
+  margin: 0;
+  padding: 0; }
 footer nav {
   width: 50.84746%;
   float: left;
   margin-right: 1.66667%;
+  font: 1.1em "Palanquin", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  height: 80px; }
+footer nav ul {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background-color: #fbeecb; }
-footer nav ul {
-  margin: 0; }
+  transform: translateY(-50%); }
 footer nav ul li {
-  padding: 0;
   display: inline-block;
   padding: 0 0.5em; }
 footer nav ul li a {
   text-decoration: none;
-  color: #333; }
+  color: #d7dee4; }
 footer .social {
   width: 15.25424%;
   float: right;
-  margin-right: 0; }
-footer .social li {
+  margin-right: 0;
+  padding-top: 1em;
+  text-align: right; }
+footer .social a {
+  color: #d7dee4; }
+footer .social a li {
   border-radius: 50%;
-  border: 2px solid #e3e3e3;
-  width: 30px;
-  height: 30px;
+  border: 2px solid #d7dee4;
+  width: 40px;
+  height: 40px;
   display: inline-block;
   text-align: center; }
-footer .social li a {
-  color: #e3e3e3; }
-footer .social li i {
+footer .social a li i {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -795,18 +800,21 @@ footer .legal {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  clear: both;
-  text-align: right; }
+  text-align: right;
+  height: 40px;
+  padding: 1em 0;
+  border-top: 1px solid #73767a; }
 footer .legal li {
   display: inline-block;
   list-style: none;
-  border-right: 1px solid #696f75;
+  color: #73767a;
+  border-right: 1px solid #73767a;
   padding: 0 0.5em; }
-footer .legal li:nth-last-child {
+footer .legal li:last-child {
   border-right: none;
   padding-right: 0; }
 footer .legal li a {
-  color: #696f75;
+  color: #73767a;
   text-decoration: none; }
 footer .legal li a:hover {
-  color: #5d6368; }
+  color: #82898f; }

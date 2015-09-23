@@ -1,25 +1,27 @@
 footer{
 	@include container(12 center);
-	@include card(1);
+	// @include card(1);
 	@include pad(1 of 12);
-	height: 100px;
+	height: 120px;
 	color:$gray;
 	background-color: $footer-gray;
+	clear: both;
 	@include rob(0.85em, 100);
 	list-style:none; 
+	ul{margin:0; padding: 0;}
 	nav{
 		@include span(6 wide first);
-		@include vertical-align;
-		background-color:$one;
-		ul{
-			margin:0;
+		
+		@include pal(1.1em, 700);
+		height: 80px;
+		ul{ @include vertical-align;
 			li{
-				padding:0;
+				
 				display:inline-block;
 				padding:0 0.5em;
 				a{
 					text-decoration:none;
-					color:#333;
+					color:$footer-gray-light;
 				}
 			}
 		}
@@ -27,9 +29,11 @@ footer{
 	.social{
 		@include span(2 last);
 		// background-color:$two;
-		a{color:#e3e3e3;
-		li {border-radius:50%; border:2px solid #e3e3e3;
-			width:30px; height: 30px; display:inline-block;
+		padding-top:1em;
+		text-align: right;
+		a{color:$footer-gray-light;
+		li {border-radius:50%; border:2px solid $footer-gray-light;
+			width:40px; height: 40px; display:inline-block;
 			text-align:center;
 			
 			i{@include vertical-align; font-size: 1.3em;}
@@ -39,16 +43,18 @@ footer{
 
 	.legal{
 		@include span(full);
-		clear:both;
 		text-align:right;
-		// background-color:$three;
+		height:40px;
+		padding:1em 0;
+		border-top:1px solid $footer-gray-dark;
 		li{display:inline-block; list-style:none; 
-			border-right:1px solid lighten($footer-gray, 15%);
+			color:$footer-gray-dark;
+			border-right:1px solid $footer-gray-dark;
 			padding:0 0.5em;
-			&:nth-last-child {border-right:none; padding-right:0;}
-			a{color:lighten($footer-gray, 15%);
+			&:last-child {border-right:none; padding-right:0;}
+			a{ color:$footer-gray-dark;
 				text-decoration:none;
-				&:hover {color:lighten($footer-gray, 10%);
+				&:hover {color:lighten($footer-gray, 25%);
 						
   					}
 				}
