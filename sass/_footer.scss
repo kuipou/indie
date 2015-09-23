@@ -27,13 +27,16 @@ footer{
 	.social{
 		@include span(2 last);
 		// background-color:$two;
+		a{color:#e3e3e3;
 		li {border-radius:50%; border:2px solid #e3e3e3;
 			width:30px; height: 30px; display:inline-block;
 			text-align:center;
-			a{color:#e3e3e3;}
+			
 			i{@include vertical-align; font-size: 1.3em;}
 			}
-	}
+		   }
+		}
+
 	.legal{
 		@include span(full);
 		clear:both;
