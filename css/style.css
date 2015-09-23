@@ -715,6 +715,30 @@ button.roundButton {
   vertical-align: middle;
   will-change: box-shadow, transform; }
 
+.logo-landing {
+  width: 73.68421%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+.logo-landing::before {
+  content: url();
+  display: block; }
+
+#tagline {
+  text-align: center;
+  font: 1.3em "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
+#tagline strong {
+  font-weight: 700; }
+
+.land {
+  width: 28.57143%;
+  float: left;
+  margin-right: 7.14286%; }
+.land .icon {
+  width: 150px;
+  margin: 0 auto; }
+
 footer {
   max-width: 100%;
   margin-left: auto;
