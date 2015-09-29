@@ -28,7 +28,7 @@ SOFTWARE.
 
 /*** Forms ***/
 // Text Inputs + Textarea
-$input-border-color: $gray;
+$input-border-color: darken($gray, 15%);
 $input-bg-color: #fff !default;
 $input-error-color: $error-color !default;
 $input-success-color: $success-color !default;
