@@ -30,8 +30,9 @@ footer{
 		@include span(2 last);
 		// background-color:$two;
 		padding-top:1em;
+		height:53px;
 		text-align: right;
-		a{color:$footer-gray-light;
+		a{color:$footer-gray-light;@include vertical-align;
 		li {border-radius:50%; border:2px solid $footer-gray-light;
 			width:40px; height: 40px; display:inline-block;
 			text-align:center;
