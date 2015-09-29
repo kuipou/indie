@@ -724,20 +724,35 @@ button.roundButton {
   content: url();
   display: block; }
 
-#tagline {
+.tagline {
   text-align: center;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
   font: 1.3em "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 400; }
-#tagline strong {
+.tagline strong {
   font-weight: 700; }
 
 .land {
-  width: 28.57143%;
+  width: 31.66667%;
   float: left;
-  margin-right: 7.14286%; }
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+  background-color: yellow;
+  text-align: center; }
 .land .icon {
   width: 150px;
   margin: 0 auto; }
+.land article {
+  font: 0.90909 "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
+.land article h1 {
+  font: 1.5em "Palanquin", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+.land article strong {
+  font-weight: 700; }
 
 footer {
   max-width: 100%;

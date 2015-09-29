@@ -1,12 +1,20 @@
 .logo-landing {
               // height:60px; 
-              width:span(3 of 4); overflow:hidden; margin: 0; padding: 0; 
+              width:span(3 of 4); overflow:hidden; 
+              margin: 0; padding: 0; 
              &::before{content: url(); display: block;}
              } 
-#tagline {text-align:center; @include rob(1.3em, 400);
+.tagline {text-align:center; 
+	@include span(full);
+		@include rob(1.3em, 400);
 		strong {font-weight:700;}
 		}
-.land {@include span(1 of 3);
+.land {@include span(4 of 12 split);
+		background-color: yellow; text-align:center;
 	   .icon{ width:150px; margin:0 auto;}
-	   
+	   article {@include rob(1em/1.1em, 400);
+	   			h1 {@include pal(1.5em, 700);}
+	   			strong {font-weight:700;}
+	   		}
+ 
 	   }
