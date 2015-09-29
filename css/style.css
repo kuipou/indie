@@ -716,12 +716,13 @@ button.roundButton {
   will-change: box-shadow, transform; }
 
 .logo-landing {
-  width: 73.68421%;
+  height: 191px;
+  width: 47.36842%;
   overflow: hidden;
-  margin: 0;
+  margin: 0 auto;
   padding: 0; }
 .logo-landing::before {
-  content: url();
+  content: url("../images/logo_big.png");
   display: block; }
 
 .tagline {

@@ -1,8 +1,8 @@
 .logo-landing {
-              // height:60px; 
-              width:span(3 of 4); overflow:hidden; 
-              margin: 0; padding: 0; 
-             &::before{content: url(); display: block;}
+              height:191px;
+              width:span(2 of 4); overflow:hidden; 
+              margin:0 auto; padding: 0;
+             &::before{content: url("../images/logo_big.png"); display: block;}
              } 
 .tagline {text-align:center; 
 	@include span(full);
