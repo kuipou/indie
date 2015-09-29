@@ -1,3 +1,5 @@
 $( document ).ready(function() {
-	$('.slider').unslider({fluid:true});
+	$('.slider').unslider({
+		fluid:true});
 });
+

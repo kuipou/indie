@@ -4,7 +4,7 @@
 $fontSize: 1em;
 $height: 2em;
 
-button.button{
+.button{
 	background-color: #777;
 	border-width: 0;
 	border-collapse: collapse;
@@ -15,8 +15,7 @@ button.button{
 	box-sizing: border-box;
 	color: #ffffff;
 	display: inline-block;
-	font-family: Roboto, Helvetica, Arial, sans-serif;
-	font-size: $fontSize;
+	@include rob ($fontSize, 500);
 	height: $height;
 	line-height: $height;
 	margin:0;
@@ -34,7 +33,7 @@ button.button{
 
 $roundButtonSize:40px;
 
-button.roundButton{
+.roundButton{
 	background-color: #777;
 	border-width: 0;
 	border-collapse: collapse;
