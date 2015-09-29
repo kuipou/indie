@@ -30,5 +30,5 @@
 	   }
 #sign{ clear:both;
 	width: span(4 of 12 center); margin:0 auto; padding-bottom:gutter();
-		.signup {@extend .button; background-color:red; margin:0 auto;}
+		.signup {@extend .button; background-color:$yellow; margin:0 auto; border-radius:1em; text-transform:uppercase;}
 	}

@@ -1421,8 +1421,10 @@ select {
   margin: 0 auto;
   padding-bottom: 1.69492%; }
 #sign .signup {
-  background-color: red;
-  margin: 0 auto; }
+  background-color: #f7c600;
+  margin: 0 auto;
+  border-radius: 1em;
+  text-transform: uppercase; }
 
 footer {
   max-width: 100%;
