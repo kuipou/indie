@@ -1,34 +1,56 @@
 .logo-landing {
-              height:191px;
-              width:span(2 of 4); overflow:hidden; 
-              margin:0 auto; padding: 0;
-             &::before{content: url("../images/logo_big.png"); display: block;
-         				@include breakpoint(max-width ($sm - 1)){
-         				content: url("../images/logo.png");	}
-         				}
-             } 
-.tagline {text-align:center; 
-	@include span(full);
-		@include rob(1.3em, 400);
-		strong {font-weight:700;}
-		}
-.land {@include span(4 of 12 split);
-		text-align:center;
-		 @include breakpoint(max-width ($sm - 1)){ @include span(full);}
-	   .icon{ width:150px; margin:0 auto;
-	    @include breakpoint(max-width ($sm - 1)){ @include span(2 of 12 first);}
-
-	    }
-	   article {@include rob(1em/1.1em, 400);
-	   			h1 {@include pal(1.5em, 700);}
-	   			strong {font-weight:700;}
-	   			@include breakpoint(max-width ($sm - 1)){
-	   			 @include span(10 of 12 last); text-align:left;
-	   			}
-	   		}
- 
-	   }
-#sign{ clear:both;
-	width: span(4 of 12 center); margin:0 auto; padding-bottom:gutter();
-		.signup {@extend .button; background-color:$yellow; margin:0 auto; border-radius:1em; text-transform:uppercase;}
+	height:191px;
+	width:span(2 of 4); overflow:hidden; 
+	margin:30px auto 30px auto;
+	padding: 0;
+	&::before{
+		content: url("../images/logo_big.png"); display: block;
+		@include breakpoint(max-width ($sm - 1)){
+		content: url("../images/logo.png");	}
 	}
+}
+
+.tagline {
+	@include span(full);
+	@include rob(1.3em, 400);
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align:center;
+	strong {font-weight:700;}
+}
+
+.land {
+	@include span(4 of 12 split);
+	text-align:center;
+	margin-top:40px;
+	margin-bottom:40px;
+	@include breakpoint(max-width ($sm - 1)){ @include span(full);}
+	.icon{ width:150px; margin:0 auto;
+		@include breakpoint(max-width ($sm - 1)){ @include span(2 of 12 first);}
+	}
+	article {@include rob(1em/1.1em, 400);
+		h1 {@include pal(1.5em, 700);}
+			strong {font-weight:700;}
+			@include breakpoint(max-width ($sm - 1)){
+			@include span(10 of 12 last); text-align:left;
+		}
+	}
+
+}
+#sign{
+	clear:both;
+	width: span(4 of 12 center);
+	margin:0 auto;
+	padding-bottom:gutter();
+	form{
+		margin-bottom:60px;
+	}
+	.signup {@extend .button;
+		background-color:$yellow;
+		margin:25px auto;
+		padding:0 30px;
+		border-radius:1em;
+		text-transform:uppercase;
+		display:block;
+	}
+}
