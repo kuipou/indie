@@ -484,6 +484,10 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
 .container {
   width: 83.05085%;
   margin: 0 auto; }
+@media (max-width: 749px) {
+  .container {
+    width: 100%;
+    padding: 0 1.69492%; } }
 
 .post {
   width: 66.10169%;
@@ -1391,15 +1395,24 @@ select {
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0;
+    height: 135px;
+    margin-bottom: 1.69492%;
+    background-color: green;
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); } }
 .land .icon {
   width: 150px;
   margin: 0 auto; }
 @media (max-width: 749px) {
   .land .icon {
-    width: 15.25424%;
+    width: 23.72881%;
     float: left;
-    margin-right: 1.69492%; } }
+    margin-right: 1.69492%;
+    background-color: blue;
+    padding: 1.2em 0;
+    height: 97px; }
+  .land .icon img {
+    width: 50%; } }
 .land article {
   font: 0.90909 "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 400; }
@@ -1410,21 +1423,33 @@ select {
   font-weight: 700; }
 @media (max-width: 749px) {
   .land article {
-    width: 83.05085%;
+    width: 66.10169%;
     float: right;
     margin-right: 0;
-    text-align: left; } }
+    text-align: left; }
+  .land article h1 {
+    margin: 0; } }
 
 #sign {
   clear: both;
   width: 32.20339%;
   margin: 0 auto;
   padding-bottom: 1.69492%; }
+@media (max-width: 749px) {
+  #sign {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; } }
 #sign .signup {
   background-color: #f7c600;
   margin: 0 auto;
+  padding: 20px;
   border-radius: 1em;
   text-transform: uppercase; }
+@media (max-width: 749px) {
+  #sign .signup {
+    width: 91.52542%; } }
 
 footer {
   max-width: 100%;

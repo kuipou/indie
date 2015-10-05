@@ -18,7 +18,10 @@
 		 }
 		}
 
-.container {width:span(10 of 12); margin:0 auto;}
+.container {width:span(10 of 12); margin:0 auto;
+@include breakpoint(max-width ($sm - 1)){
+	width:span(12); padding:0 gutter();}
+}
 
 .post { @include span(8 of 12); @include card(2);
 		min-height:100px;
@@ -40,4 +43,6 @@
 			 }
 		
 	}
+
+
 
