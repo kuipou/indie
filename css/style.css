@@ -1364,7 +1364,7 @@ select {
   height: 191px;
   width: 47.36842%;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 30px auto 30px auto;
   padding: 0; }
 .logo-landing::before {
   content: url("../images/logo_big.png");
@@ -1374,13 +1374,15 @@ select {
     content: url("../images/logo.png"); } }
 
 .tagline {
-  text-align: center;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
   font: 1.3em "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center; }
 .tagline strong {
   font-weight: 700; }
 
@@ -1389,7 +1391,9 @@ select {
   float: left;
   margin-left: 0.83333%;
   margin-right: 0.83333%;
-  text-align: center; }
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px; }
 @media (max-width: 749px) {
   .land {
     width: 100%;
@@ -1435,6 +1439,7 @@ select {
   width: 32.20339%;
   margin: 0 auto;
   padding-bottom: 1.69492%; }
+<<<<<<< HEAD
 @media (max-width: 749px) {
   #sign {
     width: 100%;
@@ -1450,6 +1455,17 @@ select {
 @media (max-width: 749px) {
   #sign .signup {
     width: 91.52542%; } }
+=======
+#sign form {
+  margin-bottom: 60px; }
+#sign .signup {
+  background-color: #f7c600;
+  margin: 25px auto;
+  padding: 0 30px;
+  border-radius: 1em;
+  text-transform: uppercase;
+  display: block; }
+>>>>>>> d5c21682a6a77dbaf5123692668932dcab24b600
 
 footer {
   max-width: 100%;
