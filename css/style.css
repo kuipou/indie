@@ -435,16 +435,17 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   background-color: #fbeecb; }
 #top .nav-top {
   width: 66.10169%;
-  float: right;
-  margin-right: 0;
+  float: left;
+  margin-right: 1.69492%;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  font: 1.2em "Palanquin", Helvetica, Arial, sans-serif;
+  font: 1.1em "Palanquin", Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-align: right;
+  color: #D6DDE3;
   background-color: #fbeecb; }
 #top .nav-top ul {
   margin: 0; }
@@ -454,10 +455,17 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   padding: 0 0.5em; }
 #top .profile {
   border-radius: 50%;
+  width: 6.77966%;
   float: right;
-  width: 30px;
-  height: 30px;
-  background-color: gray; }
+  margin-right: 0;
+  width: 46px;
+  height: 46px;
+  background-color: gray;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 .slider {
   width: 100%;
@@ -1368,13 +1376,15 @@ select {
   padding: 0; }
 @media (max-width: 749px) {
   .logo-landing {
-    width: span 3 of 4; } }
+    width: 85%;
+    overflow: hidden; } }
 .logo-landing::before {
   content: url("../images/logo_big.png");
   display: block; }
 @media (max-width: 749px) {
   .logo-landing::before {
-    content: url("../images/logo.png"); } }
+    content: url("../images/logo.svg");
+    display: block; } }
 
 .tagline {
   width: 100%;

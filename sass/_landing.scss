@@ -1,14 +1,14 @@
 
 .logo-landing {
 	height:191px;
-	width:span(2 of 4); overflow:hidden; 
+	width: span(2 of 4); overflow:hidden; 
 	margin:30px auto;
-	@include breakpoint(max-width ($sm - 1)){width:span (3 of 4);}
+	@include breakpoint(max-width ($sm - 1)){width:85%; overflow:hidden;}
 	padding: 0;
 	&::before{
 		content: url("../images/logo_big.png"); display: block;
 		@include breakpoint(max-width ($sm - 1)){
-		content: url("../images/logo.png");	}
+		content: url("../images/logo.svg");	display:block;}
 	}
 }
 

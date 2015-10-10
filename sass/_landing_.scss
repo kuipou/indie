@@ -4,7 +4,7 @@
               margin:0 auto; padding: 0;
              &::before{content: url("../images/logo_big.png"); display: block;
          				@include breakpoint(max-width ($sm - 1)){
-         				content: url("../images/logo.png");	}
+         				content: url("../images/logo.svg");	}
          				}
              } 
 .tagline {text-align:center; 

@@ -10,10 +10,10 @@
 	height: 80px;
 	.logo {@include span(2 wide first);
 			background-color:$one; }
-	.nav-top { @include span(8 last); @include vertical-align;
-				@include pal(1.2em, 700);
+	.nav-top { @include span(8); @include vertical-align;
+				@include pal(1.1em, 700);
 				text-align: right;
-
+				color: $gray;
 				background-color:$one;
 				ul{ margin :0; 
 					li{padding:0 10px; display:inline-block; padding:0 0.5em;}
@@ -21,9 +21,12 @@
 
 			}
 
-	.profile {border-radius:50%; float:right; 
-			width: 30px; height: 30px; 
+	.profile {border-radius:50%; @include span(1 of 12 last);
+			width: 46px; height: 46px; 
 			background-color:gray;
-				&:hover {}
+			@include vertical-align;
+				&:hover {
+					&::after {}
+				}
 				}
 	}
