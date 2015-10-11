@@ -1,10 +1,12 @@
 
 .logo-landing {
 	height:191px;
-	width: span(2 of 4); overflow:hidden; 
+	width: span(2 of 4 wide); overflow:hidden; 
 	margin:30px auto;
-	@include breakpoint(max-width ($sm - 1)){width:85%; overflow:hidden;}
+	@include breakpoint(max-width ($sm - 1)){width:49%; overflow:hidden; height:105px;
+		margin: 0.5em auto 0.2em;}
 	padding: 0;
+
 	&::before{
 		content: url("../images/logo_big.png"); display: block;
 		@include breakpoint(max-width ($sm - 1)){
@@ -15,11 +17,10 @@
 .tagline {
 	@include span(full);
 	@include rob(1.3em, 400);
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin:20px auto;
 	text-align:center;
 	strong {font-weight:700;}
-	@include breakpoint(max-width ($sm - 1)){ @include span(96%);}
+	@include breakpoint(max-width ($sm - 1)){ width:span(96%);}
 }
 
 .land {
@@ -28,7 +29,8 @@
 	margin-top:40px;
 	margin-bottom:40px;
 	@include breakpoint(max-width ($sm - 1)){ @include span(96%); 
-		 	height:140px; margin:(gutter() / 2) 0; 
+		 	min-height:140px; margin:(gutter() / 2) gutter();
+
 		    @include card(1);}
 	.icon{ width:150px; margin:0 auto;
 		@include breakpoint(max-width ($sm - 1)){ @include span(3 of 12 );
@@ -41,6 +43,7 @@
 			strong {font-weight:700;}
 			@include breakpoint(max-width ($sm - 1)){
 			 @include span(9 of 12 last); text-align:left;
+			 padding-bottom:gutter();
 			 h1{margin:0;}
 			}
 	}
@@ -48,13 +51,13 @@
 }
 #sign{
 	clear:both;
-	width: span(4 of 12 center);
+	width: span(5 of 12 center);
 	margin:0 auto;
 	padding-bottom:gutter();
 	form{
 		margin-bottom:60px;
 	}
-	@include breakpoint(max-width ($sm - 1)){ @include span(96%);}
+	@include breakpoint(max-width ($sm - 1)){ @include span(96%); margin:(gutter() / 2) gutter();}
 	.signup {@extend .button;
 		background-color:$yellow;
 		margin:25px auto;
@@ -64,5 +67,8 @@
 		text-transform:uppercase;
 		display:block;
 		@include breakpoint(max-width ($sm - 1)){ width:span(11 of 12); height:45px;}
+	}
+	.formdone {text-align:center;
+		h3 {@include rob(1.4em,400); }
 	}
 }
