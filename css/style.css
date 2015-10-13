@@ -432,9 +432,14 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   width: 16.94915%;
   float: left;
   margin-right: 1.66667%;
-  background-color: #fbeecb; }
+  background-color: #fbeecb;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 #top .nav-top {
-  width: 66.10169%;
+  width: 57.62712%;
   float: left;
   margin-right: 1.69492%;
   position: relative;
@@ -453,6 +458,21 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   padding: 0 10px;
   display: inline-block;
   padding: 0 0.5em; }
+#top .menu-icons {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 2em;
+  text-align: right; }
+#top .menu-icons a {
+  color: #99abba; }
+#top .menu-icons a:hover {
+  color: #8a9eaf; }
 #top .profile {
   border-radius: 50%;
   width: 6.77966%;
@@ -466,6 +486,8 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+#top .profile:hover {
+  background-color: #D6DDE3; }
 
 .slider {
   width: 100%;
