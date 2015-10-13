@@ -1368,24 +1368,17 @@ select {
   will-change: box-shadow, transform; }
 
 .logo-landing {
-  height: 191px;
+  height: auto;
   width: 52.63158%;
   overflow: hidden;
   margin: 30px auto;
   padding: 0; }
 @media (max-width: 749px) {
   .logo-landing {
-    width: 49%;
+    width: 96%;
     overflow: hidden;
-    height: 105px;
+    height: auto;
     margin: 0.5em auto 0.2em; } }
-.logo-landing::before {
-  content: url("../images/logo_big.png");
-  display: block; }
-@media (max-width: 749px) {
-  .logo-landing::before {
-    content: url("../images/logo.svg");
-    display: block; } }
 
 .tagline {
   width: 100%;
@@ -1400,7 +1393,10 @@ select {
   font-weight: 700; }
 @media (max-width: 749px) {
   .tagline {
-    width: 96%; } }
+    width: 96%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; } }
 
 .land {
   width: 31.66667%;

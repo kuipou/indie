@@ -1,17 +1,17 @@
 
 .logo-landing {
-	height:191px;
+	height:auto;
 	width: span(2 of 4 wide); overflow:hidden; 
 	margin:30px auto;
-	@include breakpoint(max-width ($sm - 1)){width:49%; overflow:hidden; height:105px;
+	@include breakpoint(max-width ($sm - 1)){width:96%; overflow:hidden; height:auto;
 		margin: 0.5em auto 0.2em;}
 	padding: 0;
 
-	&::before{
-		content: url("../images/logo_big.png"); display: block;
-		@include breakpoint(max-width ($sm - 1)){
-		content: url("../images/logo.svg");	display:block;}
-	}
+	// &::before{
+	// 	content: url("../images/logo_big.png"); display: block;
+	// 	@include breakpoint(max-width ($sm - 1)){
+	// 	content: url("../images/logo.svg");	display:block;}
+	// }
 }
 
 .tagline {
@@ -20,7 +20,7 @@
 	margin:20px auto;
 	text-align:center;
 	strong {font-weight:700;}
-	@include breakpoint(max-width ($sm - 1)){ width:span(96%);}
+	@include breakpoint(max-width ($sm - 1)){ @include span(96% split);}
 }
 
 .land {
@@ -69,6 +69,6 @@
 		@include breakpoint(max-width ($sm - 1)){ width:span(11 of 12); height:45px;}
 	}
 	.formdone {text-align:center;
-		h3 {@include rob(1.4em,400); }
+		h3 {@include rob(1.4em,400);  }
 	}
 }
