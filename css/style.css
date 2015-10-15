@@ -1497,9 +1497,10 @@ select {
   font: 1.4em "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 400; }
 #sign .formdone section a {
-  width: 21.05263%;
   text-transform: uppercase;
   text-decoration: none; }
+#sign .formdone section a img {
+  width: 21.05263%; }
 
 footer {
   max-width: 100%;
