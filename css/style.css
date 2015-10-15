@@ -470,7 +470,8 @@ head:hover ~ #top:before, head:hover ~ body #top:before {
   font-size: 2em;
   text-align: right; }
 #top .menu-icons a {
-  color: #99abba; }
+  color: #99abba;
+  margin: 0 0.2em; }
 #top .menu-icons a:hover {
   color: #8a9eaf; }
 #top .profile {

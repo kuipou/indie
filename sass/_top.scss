@@ -23,7 +23,7 @@
 			}
 	.menu-icons {@include span(2); @include vertical-align;
 				 font-size: 2em; text-align:right;
-				 a{color:darken($gray, 20%);
+				 a{color:darken($gray, 20%); margin:0 0.2em;
 				 &:hover {color:darken($gray, 25%); } 
 				 } 
 				}
