@@ -3,7 +3,7 @@
 	height:auto;
 	width: span(2 of 4 wide); overflow:hidden; 
 	margin:30px auto;
-	@include breakpoint(max-width ($sm - 1)){width:96%; overflow:hidden; height:auto;
+	@include breakpoint(max-width ($sm - 1)){width:90%; overflow:hidden; height:auto;
 		margin: 0.5em auto 0.2em;}
 	padding: 0;
 
@@ -69,6 +69,13 @@
 		@include breakpoint(max-width ($sm - 1)){ width:span(11 of 12); height:45px;}
 	}
 	.formdone {text-align:center;
-		h3 {@include rob(1.4em,400);  }
+		h3 {@include rob(1.4em,400);}
+		section{
+			a{
+				width: span(1 of 4);
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+		}
 	}
 }

@@ -1398,7 +1398,7 @@ select {
   padding: 0; }
 @media (max-width: 749px) {
   .logo-landing {
-    width: 96%;
+    width: 90%;
     overflow: hidden;
     height: auto;
     margin: 0.5em auto 0.2em; } }
@@ -1496,6 +1496,10 @@ select {
 #sign .formdone h3 {
   font: 1.4em "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 400; }
+#sign .formdone section a {
+  width: 21.05263%;
+  text-transform: uppercase;
+  text-decoration: none; }
 
 footer {
   max-width: 100%;
