@@ -1,8 +1,8 @@
 
 .logo-landing {
 	height:auto;
-	width: span(2 of 4 wide); overflow:hidden; 
-	margin:30px auto;
+	width: span(2 of 4 wide); overflow:hidden;
+	margin:75px auto;
 	@include breakpoint(max-width ($sm - 1)){width:90%; overflow:hidden; height:auto;
 		margin: 0.5em auto 0.2em;}
 	padding: 0;
@@ -28,7 +28,7 @@
 	text-align:center;
 	margin-top:40px;
 	margin-bottom:40px;
-	@include breakpoint(max-width ($sm - 1)){ @include span(96%); 
+	@include breakpoint(max-width ($sm - 1)){ @include span(96%);
 		 	min-height:140px; margin:(gutter() / 2) gutter();
 
 		    @include card(1);}
