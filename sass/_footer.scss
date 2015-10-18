@@ -27,7 +27,7 @@ footer{
 		}
 	}
 	.social{
-		@include span(4 last);
+		@include span(12 last);
 		// background-color:$two;
 		padding-top:1em;
 		height:53px;
