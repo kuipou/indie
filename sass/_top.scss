@@ -7,6 +7,7 @@
 	@include pad(1 of 12);
 // padding-left: span(2 of 12) + gutter(12);
 	background-color:$nav;
+	position: relative; z-index: 150;
 	height: 80px;
 	.logo {@include span(2 wide first);
 			background-color:$one;
@@ -30,9 +31,32 @@
 	.profile {border-radius:50%; @include span(1 of 12 last);
 			width: 46px; height: 46px; 
 			background-color:gray;
+
 			@include vertical-align;
-				&:hover {
-					background-color:$gray;
+			&:hover {
+				background-color:rgba(0, 0, 0, 0.6);
+				div {display:block;}
+			}
+			div {
+				display: none;
+				overflow: hidden;
+				background-color: $footer-gray;
+				text-align: right;
+				border-radius:2px;
+				min-width: 400%;// 200%
+				position: absolute;
+				top:136%;
+				right:-50%;
+				@include card(1);
+				
+					a{display:block;
+						padding:10px;
+						text-transform: uppercase; text-decoration: none;
+						color: white;
+						@include rob(0.8em,700);
+						border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+						&:last-child {border-bottom:none;}
+					}
+					}
 				}
-				}
-	}
+			}
