@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".slider").unslider({fluid:!0})});
+$(document).ready(function(){$(".slider").unslider({fluid:!0}),$(".profile").click(function(){$(this).children().show()})});
