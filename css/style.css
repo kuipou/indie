@@ -437,6 +437,8 @@ textarea {
 #top .menu-icons a {
   color: #99abba;
   margin: 0 0.2em; }
+#top .menu-icons a i {
+  position: relative; }
 #top .menu-icons a:hover {
   color: #8a9eaf; }
 #top .profile {
@@ -534,6 +536,23 @@ textarea {
   color: #D6DDE3;
   padding: 0 1.69492%;
   border-bottom: 1px solid #D6DDE3; }
+
+.badge {
+  position: relative; }
+.badge[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  font: 0.4em "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  background: #F44336;
+  color: white;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+  line-height: 1.4rem;
+  border-radius: 50%; }
 
 /*
 Materialize CSS

@@ -49,3 +49,20 @@
 
 
 
+.badge{
+ position: relative;
+  &[data-badge]:after {
+   content:attr(data-badge);
+   position:absolute;
+   top:-5px;
+   right:-10px;
+   @include rob(0.4em, 700);
+   background:$error-color;
+   color:white;
+   width:1.4rem;height:1.4rem;
+   text-align:center;
+   line-height:1.4rem;
+   border-radius:50%;
+   
+		}
+}

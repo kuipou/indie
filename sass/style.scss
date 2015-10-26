@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Palanquin:400,500,600,700|Roboto:400,400italic,500,500italic,700,700italic&subset=latin,latin-ext);
+@import  url(https://fonts.googleapis.com/css?family=Palanquin:400,500,600,700|Roboto:400,400italic,500,500italic,700,700italic&subset=latin,latin-ext);
 @import  "lib/lib";
 @import  "lib/mixins";
 
@@ -7,11 +7,6 @@ $susy: (
   columns:12,
   global-box-sizing: border-box,
   utter-position: split,
-  debug: (
-    image: hide,
-    output: overlay,
-    toggle: bottom left
-    )
   );
 
 
@@ -66,4 +61,5 @@ $sm:   750px;
 @import "profile";
 @import "button";
 @import "landing";
+
 @import "footer";
