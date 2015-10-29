@@ -1,0 +1,14 @@
+// User component for user icon size
+// Mixin user class and size
+
+ @mixin user($size:null) {
+ 	@if $size != null {
+	 	@if $size == "small"  or $size == "sm"  { width:  46px; height:  46px;}
+	 	@if $size == "medium" or $size == "med" { width:  95px; height:  95px;}
+		@if $size == "large"  or $size == "lg"  { width: 200px; height: 200px;}
+		border-radius:50%;
+		background-color:gray;
+
+ 		}
+ 	@else {  @warn "Invalid $size `#{$size}` for mixin `user` needs either small or sm , medium or md, large or lg .";}
+ }
