@@ -456,7 +456,7 @@ textarea {
   transform: translateY(-50%); }
 #top .profile:hover, #top .profile:focus {
   background-color: rgba(0, 0, 0, 0.6); }
-#top .profile:hover div, #top .profile:focus div {
+#top .profile .prof-menu {
   display: block; }
 #top .profile div {
   display: none;
@@ -1341,6 +1341,34 @@ select {
 .dropdown-content li > a > i {
   height: inherit;
   line-height: inherit; }
+
+/* Profile page */
+.school {
+  width: 27.77778%;
+  float: right;
+  margin-right: 0;
+  padding: 1em;
+  box-shadow: 0 0 0 10px #999999, 0 0 0 15px #e6e6e6; }
+
+#userprofile {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  background-color: blue; }
+#userprofile .userpic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: gray;
+  top: 20%;
+  margin: 0 auto; }
+#userprofile .userdesc {
+  font: 1.1em "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
+#userprofile .userdesc h1 {
+  font-weight: 700;
+  font-size: 1.3em;
+  text-transform: uppercase; }
 
 .button, #sign .signup {
   background-color: #777;

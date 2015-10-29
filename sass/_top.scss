@@ -36,8 +36,9 @@
 			@include vertical-align;
 			&:hover,&:focus {
 				background-color:rgba(0, 0, 0, 0.6);
-				div {display:block;}
+				// div {display:block;}
 			}
+			.prof-menu {display:block;}
 			div {
 				display: none;
 				overflow: hidden;

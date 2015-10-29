@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".slider").unslider({fluid:!0}),$(".profile").click(function(){$(this).children().show()})});
+$(document).ready(function(){$(".slider").unslider({fluid:!0}),$(".profile").click(function(){$toggleClass(".prof-menu").next().slideDown("slow/400/fast")})});

@@ -2,9 +2,9 @@ $( document ).ready(function() {
 	$('.slider').unslider({
 		fluid:true});
 	$('.profile').click(function() {
-		$(this).children().show();
+		$('div').toggleClass('prof-menu').next().slideDown('slow/400/fast')=;
 			
 		});
-	});
-
+			
+		});
 

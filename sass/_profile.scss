@@ -1,0 +1,25 @@
+/* Profile page */
+.school {
+	@include span(4 of 12 at 9 of 12);
+	padding:1em;
+	box-shadow:
+    0 0 0 10px hsl(0, 0%, 60%),
+    0 0 0 15px hsl(0, 0%, 90%);
+}
+#userprofile { @include span(3 of 12); background-color: blue; 
+	.userpic {@include user(large); top:20%; margin: 0 auto;}
+	section {}
+	.userdesc { @include rob(1.1em, 400); 
+		h1 {font-weight:700;
+			font-size: 1.3em;
+			text-transform: uppercase;}
+		p  {}
+
+	}
+	.social {}
+	#profile {
+		h1{}
+		.userlist {}
+	}
+
+}
