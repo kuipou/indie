@@ -1354,14 +1354,15 @@ select {
   width: 23.72881%;
   float: left;
   margin-right: 1.69492%;
-  background-color: blue; }
+  background-color: green; }
 #userprofile .userpic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background-color: gray;
   top: 20%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
 #userprofile .userdesc {
   font: 1.1em "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 400; }
@@ -1369,6 +1370,12 @@ select {
   font-weight: 700;
   font-size: 1.3em;
   text-transform: uppercase; }
+
+#profile {
+  width: 74.57627%;
+  float: right;
+  margin-right: 0;
+  background-color: teal; }
 
 .button, #sign .signup {
   background-color: #777;
