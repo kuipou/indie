@@ -554,6 +554,15 @@ textarea {
   line-height: 1.4rem;
   border-radius: 50%; }
 
+.col-art {
+  color: #466EAF; }
+
+.col-code {
+  color: #BC4444; }
+
+.col-design {
+  color: #237C23; }
+
 /*
 Materialize CSS
 The MIT License (MIT)
@@ -1370,12 +1379,34 @@ select {
   font-weight: 700;
   font-size: 1.3em;
   text-transform: uppercase; }
+#userprofile .social a {
+  color: #474a4f; }
+#userprofile .social a:hover {
+  color: #232427; }
 
 #profile {
   width: 74.57627%;
   float: right;
-  margin-right: 0;
-  background-color: teal; }
+  margin-right: 0; }
+#profile h1 {
+  font: 1.6em "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: blue; }
+#profile h5 {
+  font: 0.9em "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.69492%; }
+#profile .userlist {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%; }
+#profile .userlist ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+#profile .userlist ul li {
+  font: 1em "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300; }
 
 .button, #sign .signup {
   background-color: #777;

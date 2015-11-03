@@ -66,3 +66,30 @@
    
 		}
 }
+
+// Indie Colors usage @include indie-color(art); 
+@mixin indie-color ($color) {
+  @if $color == 1 {
+    color: $ind-blue;
+  }
+  @if $color == 2 {
+    color: $ind-green;
+  }
+  @if $color == 3 {
+    color: $ind-red;
+  }
+  @else {
+    color: $ind-gray;
+  }
+}
+
+// Color
+.col-art {
+  color: $ind-blue;
+}
+.col-code {
+  color: $ind-red;
+}
+.col-design {
+  color: $ind-green;
+} 
