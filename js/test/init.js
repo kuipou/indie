@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".slider").unslider({fluid:!0}),$(".profile").click(function(){$toggleClass(".prof-menu").next().slideDown("slow/400/fast")})});
+$(document).ready(function(){$(".slider").unslider({fluid:!0}),$(".modal-trigger").leanModal({dismissible:!0,opacity:.5,in_duration:300,out_duration:200,ready:function(){alert("Ready")},complete:function(){alert("Closed")}})});

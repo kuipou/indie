@@ -32,6 +32,7 @@
     "uuid": "^2.0.1"
   },
   "dependencies": {
+    "css-modal": "^1.4.1",
     "lodash": "^3.10.1"
   }
 }

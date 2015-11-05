@@ -1,10 +1,14 @@
 $( document ).ready(function() {
 	$('.slider').unslider({
 		fluid:true});
-	$('.profile').click(function() {
-		$('div').toggleClass('prof-menu').next().slideDown('slow/400/fast')=;
-			
-		});
+	$('.modal-trigger').leanModal({
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: .5, // Opacity of modal background
+      in_duration: 300, // Transition in duration
+      out_duration: 200, // Transition out duration
+      ready: function() { alert('Ready'); }, // Callback for Modal open
+      complete: function() { alert('Closed'); } // Callback for Modal close
+    });
 			
 		});
 

@@ -355,6 +355,12 @@ textarea {
 
   h2, h3 {
     page-break-after: avoid; } }
+/**
+ * Tipsy.sass
+ * @author: Dang Van Thanh
+ * @description: A Simple Mixin Tooltip CSS Using Sass
+ * @version: 1.0.5
+ */
 .hidden {
   display: none !important;
   visibility: hidden !important; }
@@ -562,6 +568,51 @@ textarea {
 
 .col-design {
   color: #237C23; }
+
+.tooltip {
+  position: relative;
+  display: inline-block; }
+.tooltip:hover:before, .tooltip:hover:after, .tooltip:focus:before, .tooltip:focus:after {
+  visibility: visible;
+  opacity: 1; }
+.tooltip:before, .tooltip:after {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000000;
+  pointer-events: none;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transition: 250ms ease-in-out;
+  -webkit-transition: 250ms ease-in-out; }
+.tooltip:before {
+  content: '';
+  border: 0 solid transparent;
+  bottom: 0;
+  z-index: 1000001; }
+.tooltip:after {
+  content: attr(data-tipsy);
+  background-color: #34495e;
+  border-radius: 0;
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); }
+.tooltip:hover:before, .tooltip:focus:before {
+  top: -15%; }
+.tooltip:hover:after, .tooltip:focus:after {
+  bottom: 115%; }
+.tooltip:before, .tooltip:after {
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); }
+.tooltip:before {
+  border-top-color: #34495e;
+  top: -35%; }
+.tooltip:after {
+  bottom: 135%; }
 
 /*
 Materialize CSS
@@ -1351,6 +1402,100 @@ select {
   height: inherit;
   line-height: inherit; }
 
+/*
+Materialize CSS
+The MIT License (MIT)
+
+Copyright (c) 2014-2015 Materialize
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
+.modal {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22), 0 14px 56px rgba(0, 0, 0, 0.25);
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fafafa;
+  padding: 0;
+  max-height: 70%;
+  width: 55%;
+  margin: auto;
+  overflow-y: auto;
+  border-radius: 2px;
+  will-change: top, opacity; }
+@media (max-width: 749px) {
+  .modal {
+    width: 80%; } }
+.modal h1, .modal h2, .modal h3, .modal h4 {
+  margin-top: 0; }
+.modal .modal-content {
+  padding: 24px; }
+.modal .modal-close {
+  cursor: pointer; }
+.modal .modal-footer {
+  border-radius: 0 0 2px 2px;
+  background-color: #fafafa;
+  padding: 4px 6px;
+  height: 56px;
+  width: 100%; }
+.modal .modal-footer .btn, .modal .modal-footer .btn-flat {
+  float: right;
+  margin: 6px 0; }
+
+.lean-overlay {
+  position: fixed;
+  z-index: 999;
+  top: -100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 125%;
+  width: 100%;
+  background: #000;
+  display: none;
+  will-change: opacity; }
+
+.modal.modal-fixed-footer {
+  padding: 0;
+  height: 70%; }
+.modal.modal-fixed-footer .modal-content {
+  position: absolute;
+  height: calc(100% - 56px);
+  max-height: 100%;
+  width: 100%;
+  overflow-y: auto; }
+.modal.modal-fixed-footer .modal-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0; }
+
+.modal.bottom-sheet {
+  top: auto;
+  bottom: -100%;
+  margin: 0;
+  width: 100%;
+  max-height: 45%;
+  border-radius: 0;
+  will-change: bottom, opacity; }
+
 /* Profile page */
 .school {
   width: 27.77778%;
@@ -1397,16 +1542,29 @@ select {
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 1.69492%; }
-#profile .userlist {
+#profile .userlist, #profile .extralist {
   width: 23.72881%;
   float: left;
   margin-right: 1.69492%; }
-#profile .userlist ul {
+#profile .userlist ul, #profile .extralist ul {
   margin-top: 0;
   margin-bottom: 0; }
-#profile .userlist ul li {
+#profile .userlist ul li, #profile .extralist ul li {
   font: 1em "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 300; }
+#profile .software {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%; }
+#profile .software ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+#profile .software ul li {
+  display: inline-block; }
+#profile .software ul li img {
+  width: 40px;
+  height: 40px; }
 
 .button, #sign .signup {
   background-color: #777;

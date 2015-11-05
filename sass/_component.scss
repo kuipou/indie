@@ -93,3 +93,5 @@
 .col-design {
   color: $ind-green;
 } 
+
+.tooltip {@include tipsy(n, #34495e, 0, 0);}

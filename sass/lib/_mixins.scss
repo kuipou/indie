@@ -4,7 +4,7 @@
 @import "user";
 @import "card";
 @import "typography";
-
+@import "tipsy";
 
 // Hide from screenreaders and browsers
 //
@@ -60,31 +60,3 @@
     padding-bottom: 75%;
   }
 }
-
-// // Indie Colors usage @include indie-color(art); 
-// @mixin indie-color ($color) {
-//   @if $color == 'art' {
-//     color: $ind-blue;
-//   }
-//   @if $color == 'design' {
-//     color: $ind-green;
-//   }
-//   @if $color == 'code' {
-//     color: $ind-red;
-//   }
-//   @else {
-//     color: $ind-gray;
-//   }
-// }
-
-// // Color
-// .col-art {
-//   @include indie-color(art);
-// }
-// .col-code {
-//   @include indie-color(code);
-// }
-// .col-design {
-//   @include indie-color(design);
-// } 
-
