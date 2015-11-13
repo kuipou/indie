@@ -41,4 +41,13 @@
 					}
 				}
 			}
+
 	}
+
+.soft-list { width: span(6 of 12);
+	li{ width: span(3 of 6); height:60px; display:inline-block; background-color:blue;
+		@include rob(1em, 500);
+	img {margin: 0.7em;} 
+	&:nth-child(even) {}
+		}
+}

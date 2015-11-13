@@ -1566,6 +1566,18 @@ SOFTWARE.
   width: 40px;
   height: 40px; }
 
+.soft-list {
+  width: 49.15254%; }
+.soft-list li {
+  width: 48.27586%;
+  height: 60px;
+  display: inline-block;
+  background-color: blue;
+  font: 1em "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 500; }
+.soft-list li img {
+  margin: 0.7em; }
+
 .button, #sign .signup {
   background-color: #777;
   border-width: 0;
